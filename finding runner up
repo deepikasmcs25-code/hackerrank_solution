@@ -1,0 +1,7 @@
+n = int(input())
+arr = list(map(int, input().split()))
+
+arr = list(set(arr)) # Find the runner-up (second highest) score by removing duplicates
+arr.sort()             # sort the list
+
+print(arr[-2])         #score of the runner up
