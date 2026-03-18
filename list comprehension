@@ -1,0 +1,11 @@
+x = int(input())
+y = int(input())
+z = int(input())
+n = int(input())#taking user input of x,y,z,n"
+
+result = [i, j, k] 
+          for i in range(x+1) # Generate all possible [i, j, k] combinations using list comprehension
+          for j in range(y+1) 
+          for k in range(z+1) 
+          if (i + j + k) != n]# Include only those where the sum of i + j + k is not equal to n
+print(result)          
